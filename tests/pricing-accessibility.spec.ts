@@ -3,7 +3,6 @@ import { test } from "../fixtures/fixtures";
 import AxeBuilder from "@axe-core/playwright";
 
 test.describe("Pricing Page", () => {
-  test.fail();
   test.beforeEach(async ({ pricingPage, cookiesBanner }) => {
     await pricingPage.goto();
     await cookiesBanner.acceptIfVisible();
